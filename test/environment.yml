@@ -1,3 +1,17 @@
-name: server
+name: openmc-dash-interface
+channels:
+    - conda-forge
 dependencies:
-  - werkzeug
+- python=3.6
+- anaconda
+- openmc
+- pip
+- pip:
+  - dash
+  - plotly
+  - dash-core-components
+  - dash-html-components
+  - dash-daq
+  - numpy
+  - pandas
+  - gunicorn
